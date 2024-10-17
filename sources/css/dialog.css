@@ -1,0 +1,61 @@
+html {color-scheme: light dark;}
+h1,h2{
+    text-align: center;
+
+}
+p{line-height: 1.32;}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#perchance-display{
+    overflow: overlay;
+    padding: 0px 2% 40px 2%;
+    background-color: rgb(107 98 98 / 16%);
+    width: 66%;
+    height: 100%;
+    text-align: left;
+}
+button.ether {
+    background-color: #52a558;
+    border-radius: 25px;
+    font-size: larger;
+    padding: 6px 12px;
+    min-width: 150px;
+}
+.dialog-button-container{
+    display: flex;
+    justify-content: center;
+}
+button.dialog {
+    background-color: #a55260;
+    border-radius: 25px;
+    font-size: larger;
+    padding: 6px 12px;
+    min-width: 150px;
+}
+.generation-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #714a9573;
+    padding: 12px 32px;
+    align-items: center;
+    border-radius: 42px;
+}
+.intro-container{
+    margin: 20px 10px;
+    padding: 1px 16px 10px;
+    background-color: #21246d5e;
+    text-align: center;
+}
+.modal{
+    width: 30%;
+    min-width: 350px;
+    height: 80%;
+    text-align: left;
+}
+.modal::backdrop{
+    background-color: #443254eb;
+}

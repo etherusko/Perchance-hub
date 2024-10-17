@@ -1,0 +1,65 @@
+<!--<!DOCTYPE html>
+<html lang="en">-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perchance Document</title>
+    <link rel="stylesheet" href="../../sources/css/dialog.css">
+</head>
+<body>
+
+
+
+    <dialog class='modal' id='init-dialog'>
+        <h2>Ante de empezar:</h2>
+        <p>Este generador es una demo ralizada con el <span>ai-text-plugin</span> de un diálogo entre dos personajes.</p>
+        <p style="white-space: pre-wrap;">El generador tiene 2 etapas:<br>
+            - Primero genera un trasfondo (contexto) basado en la descripción de los personajes.<br>
+            - Luego podrás generar un diálogo entre los dos personajes basado en su descripción y en el trasfondo generado.
+        </p>
+        <p>Los personajes no cambian. Siempre son los que aparecen en la introducción. Pronto subiré una versión dónde se pueda
+          personalizar a los personajes. Si deseas cambiar a los personaje puedes revisar el código y modificar las variables (perso1 y perso2) 
+          Son las primeras dos variables y el código es muy intuitivo respecto a los cambios que debes realizar.
+        </p>
+        <div class='dialog-button-container'>
+          <button class='dialog' onclick="this.parentElement.parentElement.close()">Cerrar</button>
+        </div>
+      </dialog>
+      
+      <main id='main-container'>
+        <h1>AI-plugin exercise</h1>
+        <section id="perchance-display">
+          
+          <div class='intro-container'>
+          <h2>Intro</h2>
+          <div id='intro'>
+            [intro]
+          </div>
+          </div>
+          
+          <h2>Trasfondo</h2>
+          <div class='generation-container' id='trasfondo'>
+            <p id='trasfondo-p'><span>(Pulsa el botón para generar un trasfondo)</span></p>
+            <button class='ether' onclick='generarTrasfondo()'>Generar</button>
+          </div>
+          
+          <h2>Diálogo</h2>
+          <div class='generation-container' id='dialogo'>
+            <p id='dialogo-p'>(Aqui se genera el diálogo)<p>
+            <button class='ether' onclick='generarDialogo()'>Diálogo</button>
+          </div>
+          
+        </section>
+      </main>
+
+
+
+
+
+
+
+
+
+<script src="../../sources/js/dialog.js"> </script>
+</body>
+</html>
