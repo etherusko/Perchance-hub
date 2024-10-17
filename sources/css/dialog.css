@@ -32,16 +32,16 @@ button.ether:hover{
     display: flex;
     justify-content: center;
 }
-button.dialog:hover {
+button.dialog {
     background-color: #a55260;
     border-radius: 25px;
     font-size: larger;
     padding: 6px 12px;
     min-width: 150px;
-}
-button.dialog {
-    background-color: #a55260b0;
     margin-top: 30px;
+}
+button.dialog:hover {
+    background-color: #a55260b0;
 }
 .generation-container{
     display: flex;
